@@ -1,0 +1,28 @@
+{
+    "response": [
+        {
+            "maintainer": "titusevan",
+            "oem": "Poco",
+            "device": "Poco X3 Pro",
+            "filename": "crDroidAndroid-16.0-20251211-garnet-v12.4.zip",
+            "download": "https://saz.mksat.net/firmware/garnet/crdroid/crDroidAndroid-16.0-20251211-garnet-v12.4.zip",
+            "timestamp": 1765367107,
+            "md5": "67aa01b08fd46287b471c4b56dfc3f66",
+            "sha256": "1f96efb0a60ce870214c406b6815a59c47756422381774848aa1e5fd61e5093a",
+            "size": 2358065444,
+            "version": "12.4",
+            "buildtype": "Weekly",
+            "forum": "",
+            "gapps": "https://saz.mksat.net/firmware/garnet/crdroid/NikGaps.zip",
+            "firmware": "",
+            "modem": "",
+            "bootloader": "",
+            "recovery": "",
+            "paypal": "",
+            "telegram": "",
+            "dt": "",
+            "common-dt": "",
+            "kernel": ""
+        }
+    ]
+}
