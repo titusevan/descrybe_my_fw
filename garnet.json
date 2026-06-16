@@ -5,7 +5,7 @@
             "oem": "Redmi",
             "device": "Redmi Note 13 Pro 5G",
             "filename": "crDroidAndroid-16.0-20260616-garnet-v12.11.zip",
-            "download": "http://172.16.1.220:8080/garnet/crDroidAndroid-16.0-20260616-garnet-v12.11.zip",
+            "download": "https://172.16.1.220:8443/garnet/crDroidAndroid-16.0-20260616-garnet-v12.11.zip",
             "timestamp": 1781610819,
             "md5": "9dc0d54e2198abd72bb7fcb0b5b0b4ac",
             "sha256": "f2de6bd8ab880b5e4f8ea048aeab9118bc738fbcf0e73aae0ff833382aaa7e18",
