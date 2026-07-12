@@ -7,9 +7,9 @@
             "filename": "Lunaris-AOSP-garnet-Community-3.12-GMS-2026071205.zip",
             "download": "https://saz.mksat.net/firmware/Lunaris-AOSP-garnet-Community-3.12-GMS-2026071205.zip",
             "timestamp": 1783833382,
-            "md5": "303dcfc20eefbd7240b7d11d54895734",
-            "sha256": "8da7a19fcfef28a32f034d7c4b8ced5f5d96bb98e0ef03c68e21c5a474637026",
-            "size": 2974553980,
+            "md5": "391354a6a87afc9e922f15855f2f46d5",
+            "sha256": "bd0a2ace7b230ea40f05b733f757b2a861dead97fe9344adce85c6e83e7a07e1",
+            "size": 2974553404,
             "version": "3.12",
             "buildtype": "user",
             "forum": "",
@@ -23,7 +23,7 @@
             "dt": "",
             "common-dt": "",
             "kernel": "",
-            "id": "8da7a19fcfef28a32f034d7c4b8ced5f5d96bb98e0ef03c68e21c5a474637026"
+            "id": "bd0a2ace7b230ea40f05b733f757b2a861dead97fe9344adce85c6e83e7a07e1"
         }
     ]
 }
