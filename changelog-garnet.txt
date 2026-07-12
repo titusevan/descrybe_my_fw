@@ -17,7 +17,7 @@ acbff4d732 [art] batch cmc sigbus prefetch
 ========================================
  PROJECT: device/xiaomi/garnet
 ========================================
-d0b99e1 Add Russian for Singularity && Lunaris strings about device
+701bdc0 Add Russian for Singularity && Lunaris strings about device
 b11a5c2 Lunaris AOSP Build Flags
 47f3061 Move position reboot variants recovery and reboot
 50ff574 fix position % on AOD
