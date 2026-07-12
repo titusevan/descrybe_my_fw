@@ -1,0 +1,170 @@
+========================================
+ PROJECT: android
+========================================
+83d1483 Track more forks
+393de0e Revert "manifest: Track custom prebuilts/misc revision"
+b634e22 Merge pull request #6 from Sanjis-Android-Playground/16.2
+96d929d manifest: Track libvmmem Change-Id: I01b19acb8d3110bc5e1d599856aaffa219bc5f13
+802ab01 build NOSAtmosphereEffect
+
+========================================
+ PROJECT: art
+========================================
+fda1fe7458 [art] use ldp/stp for arm64 native call args
+aabed69f40 [art] add jit pc range cache
+acbff4d732 [art] batch cmc sigbus prefetch
+
+========================================
+ PROJECT: device/xiaomi/garnet
+========================================
+9f2ef8a Add Russian for Singularity && Lunaris strings about device
+b11a5c2 Lunaris AOSP Build Flags
+47f3061 Move position reboot variants recovery and reboot
+50ff574 fix position % on AOD
+742b207 Fix AOD Brightness
+bbfa329 garnet: overlay: Set Wi-Fi 6 support
+7589041 Fix props/vendor.prop to Google Pay & Integrity and Bluetooth
+6fa3435 copy overlay
+fe93963 rm gamespase
+94e7287 garnet: props: Enable Client Composition Cache
+d0da64f garnet: props: increase audio offload buffer size from 32KB to 64KB
+f9efc1e garnet: props: Further reduce uclamp values
+a7c81bb garnet: overlay: Add restart systemui in advanced boot menu
+
+========================================
+ PROJECT: external/pthreadpool
+========================================
+4ce42f4 adding tensorflow visibility
+
+========================================
+ PROJECT: external/sqlite
+========================================
+574c55b [enhance] enabling sqlite stat4 for better query planning
+
+========================================
+ PROJECT: external/tensorflow
+========================================
+e9429503de3 upgrading tensorflow jni | adding xnnpack jni deps
+
+========================================
+ PROJECT: frameworks/base
+========================================
+331f80dd71f4 PhoneWindowManager: Fix assist key wakeup
+0d62e90f3b8f services: Refactor Reality Display engine
+ae23dd25c16d Fix NullPointerException in PackageManagerService
+aeeb73a0be7b Reduce unnecessary calls to getLatestVsyncEventData
+18e7fb15ce1d ViewGroup: null-check child in dispatchDraw to avoid NPE
+e7e72c40ac9e Fix RuntimeXfermode native memory leaks
+40fc12020e46 Fix media duration calculation for HTTP streams larger than 2GB
+bfc84a406207 Fix SecurityException crash when setting wallpaper from Google Photos
+2a9578759ad1 Monitor Settings.Global.DEVICE_PROVISIONED, if changed from 0 to 1 and the autofill provider is not available, reset to default.
+c93ce87eedcb Fix check for pinned shortcut in ShortcutRequestPinProcessor
+87281ec2b0b9 use shared bitmaps in MediaMetadata to avoid Binder failures
+04e7afe1abdf Avoid NPE in CriticalEventLog.saveLogToFileNow()
+72c268b7a9b5 PowerStats: extend the MAX_STATS_ARRAY_LENGTH
+65196ff85355 fixup! Broadcast radio power state changes
+5ea0d8a19e73 Broadcast radio power state changes
+566108d4440c services: Fix appops spam
+8fd3f44b2a70 services: Silence some unneded logspam
+1ea7d7a641d8 Prevent system_server from restarting due to app issues.
+29a220257046 SystemUI: Gate WindowRootViewBinder logs behind DEBUG flag
+0d6a04e0fb20 SystemUI: Use proper Resolver background color
+e20affeb31e4 Show the vibrate icon in the Status Bar by default
+33ee83cad6e2 SettingsProvider: disable bluetooth by default
+bd8352d2010b Disable/reduce functionality of various ad/analytics libraries
+938e72bda73a Editor: Disable magnifier position animation
+132de1e338c8 SystemUI: Don't show tuner warning
+066a5e35d2d5 SystemUI: Hide more tuner preferences on production builds
+757723ae748d Reduce ContrastColorUtil logspam
+304bd4696815 libs: Don't spam logcat with resource messages
+d4339c17d87b DisplayPowerController: Disable log spam
+a54a659c78b8 services: Reduce NotificationHistoryDatabase logspam
+a0e9cbce971f libs: hwui: Build using ThinLTO
+63a120a5ed0c config: Allow opening power menu when screen is off
+6896c5fc4a65 services: Stop the spamming of background start not allowed
+926f7902029d ProcessList: Silence lmkd retries logspam
+8393dcbd3efb ChangeReporter: Silence log spam
+f240c7e87ed3 hwui: Remove logspam cause by early animation handle check
+cfbc6f2314ef OomAdjuster: Remove excessive log
+c871dab098a9 jobscheduler: disable debug
+e0fb8c579052 SystemUI: Disable nav bar auto dim
+a72d53aa4064 AppProfiler: dont be so hectic on cpu battery stats
+d2a275b095ad base: disable DBG
+6ddbd9dac940 fixup! Trace: Disable debug tracing on production builds
+4604f6e5616b Revert "Change battery saver tile to launch battery saver page"
+0324fa30dea5 base: disable debug
+a283d183b14e input: Fix suppression of composite Bluetooth keyboards
+4fea4670fb39 SettingsProvider: Set device name to marketname if available
+6a9fa8504e52 SystemUI: Adding usb prompt bottomsheet
+443469f5e4b9 SystemUI: Fixing unsupported qs tile icon crash
+c07c1f3176b9 SystemUI: Add color min on neu3 clock
+713907f47e14 SystemUI: Preserve per-view alpha through wobble animation
+edaa1e00662c services: Add ambient display action [1/3]
+
+========================================
+ PROJECT: frameworks/libs/systemui
+========================================
+89e921b Set themed icon scale default value 100 [1/2]
+
+========================================
+ PROJECT: lineage/scripts
+========================================
+594cd33 pixel: Also update system build fingerprint
+c5075d1 pixel: Create directory before downloading
+
+========================================
+ PROJECT: lineage/website
+========================================
+cae5e9e www: Add amlogic burn mode to web flash-tools mention
+178a956 www: Hotfix 2026-07-07
+997b214 www: Add July 2026 update post
+
+========================================
+ PROJECT: lineage/wiki
+========================================
+23ee8012 wiki: bugreporting: English please
+497d3e96 wiki: Update keys list for 17
+bb9ea48f wiki: Update copy-partitions install steps
+
+========================================
+ PROJECT: packages/apps/Launcher3
+========================================
+1e2fa844f6 Launcher3: Gate BaseDepthController logs behind DEBUG flag
+e8767d320b Launcher3: Disable Input events debug
+934485baf0 Launcher3: Set themed icon scale default value 100 [2/2]
+1badc51252 Launcher3: Add Atmosphere effects option to launcher popup menu
+
+========================================
+ PROJECT: packages/apps/NOSAtmosphereEffect
+========================================
+7473c6d Init import NOSAtmosphereEffect
+
+========================================
+ PROJECT: packages/apps/Settings
+========================================
+1d72a63043e Settings: Add strings for new display modes
+
+========================================
+ PROJECT: packages/apps/Singularity
+========================================
+2adb995 Add auto-subject extraction on wallpaper change
+ee4803d add Atmosphere Effect preference
+c83107c Add ambient display action [3/3]
+
+========================================
+ PROJECT: packages/modules/Permission
+========================================
+5805459553 Revert "permissions: check verity before using"
+
+========================================
+ PROJECT: packages/services/Telecomm
+========================================
+49bf9b7e1 InCallController: use dzzz-da style vibration for connect/disconnect
+37c669354 [bugfix] prefer bluetooth route for ringing
+
+========================================
+ PROJECT: vendor/lineage
+========================================
+59db834b lineage: Introduce a simple program for disabling adb remount overlays
+f156584c config: Build NOSAtmosphereEffect
+
