@@ -2,7 +2,7 @@
     "response": [
         {
             "maintainer": "titusevan",
-            "oem": "",
+            "oem": "Redmi note 13 pro",
             "device": "garnet",
             "filename": "Lunaris-AOSP-garnet-Community-3.12-GMS-2026071418.zip",
             "download": "https://saz.mksat.net/firmware/Lunaris-AOSP-garnet-Community-3.12-GMS-2026071418.zip",
@@ -13,7 +13,7 @@
             "version": "3.12",
             "buildtype": "userdebug",
             "forum": "",
-            "gapps": "",
+            "gapps": "yes",
             "firmware": "",
             "modem": "",
             "bootloader": "",
@@ -22,8 +22,7 @@
             "telegram": "",
             "dt": "",
             "common-dt": "",
-            "kernel": "",
-            "id": "57c32463a5891c3d6c38d8d7aadfd5f807965150483c61d7eab87c9574085a8c"
+            "kernel": ""
         }
     ]
 }
