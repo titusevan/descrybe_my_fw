@@ -52,7 +52,7 @@ b5c02660d Merge tag 'LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0' into staging/lin
 ========================================
  PROJECT: device/xiaomi/garnet
 ========================================
-701bdc0 Add Russian for Singularity && Lunaris strings about device
+2bd33da Add Russian for Singularity && Lunaris strings about device
 
 ========================================
  PROJECT: frameworks/base
@@ -192,7 +192,6 @@ d36a1100 wiki: devices: Wrap too long device names
 71d1cca6 wiki: devices: Theme checkboxes properly
 f6051c7b wiki: devices: Add margin to checkboxes
 8c762417 wiki: Add margin to top title
-309874ec wiki: Fix broken link to reviewers list
 
 ========================================
  PROJECT: packages/apps/Launcher3
