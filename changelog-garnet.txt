@@ -175,6 +175,7 @@ dbd007b hudson: Add lamu family
 ========================================
  PROJECT: lineage/mirror
 ========================================
+909c062 Updated aosp-minimal to 14-Jul-2026 22:01 UTC
 a9b5381 Updated to 10-Jul-2026 22:01 UTC
 
 ========================================
@@ -192,6 +193,21 @@ d36a1100 wiki: devices: Wrap too long device names
 71d1cca6 wiki: devices: Theme checkboxes properly
 f6051c7b wiki: devices: Add margin to checkboxes
 8c762417 wiki: Add margin to top title
+
+========================================
+ PROJECT: packages/apps/Aperture
+========================================
+4256784 Automatic translation import
+
+========================================
+ PROJECT: packages/apps/Glimpse
+========================================
+29694da Automatic translation import
+
+========================================
+ PROJECT: packages/apps/Jelly
+========================================
+6517f6a Automatic translation import
 
 ========================================
  PROJECT: packages/apps/Launcher3
@@ -348,6 +364,11 @@ f46fc9f crdroid: Add customization for bold clock and period separator
 4b864d6 Add screen-on memory reclaim toggle
 
 ========================================
+ PROJECT: packages/apps/Twelve
+========================================
+2443487 Automatic translation import
+
+========================================
  PROJECT: vendor/bcr
 ========================================
 376e1d1 BCR: Auto-update to version 3.4
@@ -360,6 +381,7 @@ f46fc9f crdroid: Add customization for bold clock and period separator
 ========================================
  PROJECT: vendor/qcom/opensource/commonsys/fm
 ========================================
+87b347b Automatic translation import
 bb6f204 Merge tag 'LA.QSSI.16.0.r1-14000-qssi.0' into staging/lineage-23.2_merge-LA.QSSI.16.0.r1-14000-qssi.0
 3848508 Merge tag 'LA.QSSI.16.0.r1-13200-qssi.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/fm-commonsys into HEAD
 
