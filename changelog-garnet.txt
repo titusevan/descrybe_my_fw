@@ -15,39 +15,9 @@ dabc539d7 bionic: drop long property-name warning spam
 6f6d36648 libm: optimize roundf with bit-based fast path
 
 ========================================
- PROJECT: device/qcom/sepolicy
-========================================
-d903f8e1 Merge tag 'LA.QSSI.16.0.r1-14000-qssi.0' into staging/lineage-23.2_merge-LA.QSSI.16.0.r1-14000-qssi.0
-
-========================================
  PROJECT: device/qcom/sepolicy_vndr/legacy-um
 ========================================
 a61270bcd vendor: lahaina: Label hwmon node from motorola/sm7325
-4471e107f qva: Remove duplicate attributes
-2503339db qva: lahaina: exported_wifi_prop -> wifi_hal_prop
-73926f8b2 sepolicy_vndr: lahaina: Remove duplicate rule & labels
-4498c0e33 fixup! Remove vendor_service.
-bd6068a7f Merge tag 'LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into HEAD
-
-========================================
- PROJECT: device/qcom/sepolicy_vndr/sm8550
-========================================
-db3029437 Merge tag 'LA.VENDOR.13.2.0.r1-27500-KAILUA.QSSI16.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into HEAD
-
-========================================
- PROJECT: device/qcom/sepolicy_vndr/sm8650
-========================================
-69cbb9a12 Merge tag 'LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
-574037f40 qva: Remove duplicate attributes
-a0bb754a0 Revert "sepolicy: Add new Sepolicy context for AVC denial for volcano"
-7847bbf4d Revert "sepolicy: Add new Sepolicy context for AVC denial for volcano"
-7ed9a6287 Merge tag 'LA.VENDOR.14.3.0.r1-22900-lanai.QSSI16.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into HEAD
-
-========================================
- PROJECT: device/qcom/sepolicy_vndr/sm8750
-========================================
-b5c02660d Merge tag 'LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
-75073394f Merge tag 'LA.VENDOR.15.4.0.r1-21200-pakala.QSSI16.0' of https://git.codelinaro.org/clo/la/device/qcom/sepolicy_vndr into HEAD
 
 ========================================
  PROJECT: device/xiaomi/garnet
@@ -57,6 +27,44 @@ b5c02660d Merge tag 'LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0' into staging/lin
 ========================================
  PROJECT: frameworks/base
 ========================================
+0d97024e6e02 SystemUI: SystemIconsPopup: Add `RECEIVER_NOT_EXPORTED` to all context-registered receivers
+338b2a626459 SystemUI: SystemIconsPopup: Persist toggle states across popup without re-querying
+e0e8b6a6ba35 SystemUI: SystemIconsPopup: Open media app on album art tap
+e181622fd5ef SystemUI: Allow to copy screenshots to clipboard instead of saving in storage [1/3]
+89ccbd84e3b2 SystemUI: Clock style custom gradient color support [1/2]
+7f383f9d2b3b SystemUI: SystemIconsPopup: Add haptic feedback on quick toggle tap
+f8e55a64c7bc SystemUI: SystemIconsPopup: Add bouncy popup effect
+29eb79d88435 SystemUI: SystemIconsPopup: Add media panel to quick popup
+e2217dc966f7 SystemUI: Allow disable split landscape notification [1/2]
+9454b92b1a50 Fix crash with media carousel pager update
+6e640d6138e1 increase flashlight dialog separator contrast
+32dfd4e5c531 SystemUI: Fix stale longClickable of system popup breaking QS swipe
+63e9df20130a SystemUI: Gate notification blur with transparency settings
+49ebd4641765 SystemUI: Implement realtime blur for heads up notifications
+ef39e9aefc4e SystemUI: Add system icon popup in gesture action [1/3]
+a5021d5c6e4c SystemUI: SystemIconsPopup: Match battery card background to other inactive tiles
+1f63ea4fe6b9 SystemUI: SystemIconsPopup: Clip ripple to card shape for battery/data cards
+ea8fca3b472e SystemUI: SystemIconsPopup: Adapt icon tint on ui theme change
+303ec25060dd SystemUI: SystemIconsPopup: Add data switch support in cards
+78c76c8714aa SystemUI: SystemIconsPopup: Opens the system Battery on battery card click
+5d334df90cfe SystemUI: SystemIconsPopup: Battery ring pulse near critical/full
+b03267c45ee7 SystemUI: SystemIconsPopup: Speed up the wave when charging
+e0cebb9d6571 SystemUI: SystemIconsPopup: Add more tiles
+c96d47146aa9 SystemUI: SystemIconsPopup: Improve charging stauts
+bbaf90c9e2aa SystemUI: Make StatusBar icon popup configurable [1/2]
+83d42b445fcd SystemUI: Add squish animation in StatusBar icon popup
+e9c0e52fcc01 SettingsLib: Fix UsageProgressBarPreference progress animation
+b52be6b842b6 [SystemUI] SystemIconsPopup: Drop redundant popup state tracking
+7dc8e0c56068 [SystemUI] SystemIconsPopup: Prevent dismiss animation restarts
+b2187f06b3b0 [SystemUI] SystemIconsPopup: Deduplicate popup theme setup
+96f8bf3f372f [SystemUI] SystemIconsPopup: Cut battery wave draw allocations
+bf8c3bd3591b [SystemUI] SystemIconsPopup: Defer animated value reads to draw phase
+f6c61805502d [SystemUI] SystemIconsPopup: Make connection status event-driven
+4a3ac65a09e9 [SystemUI] SystemIconsPopup: Replace telephony polling with callbacks
+f60856cbb8d1 [SystemUI] SystemIconsPopup: Update battery card from battery broadcasts
+4477d5c2bd8c [SystemUI] SystemIconsPopup: Use display-aware WindowManager
+a4b0f5886a8e [SystemUI] SystemIconsPopup: Show power menu via GlobalActionsComponent
+e6345c70d16a [SystemUI] Implement StatusBar icon popup view
 960b85b026f4 SystemUI: Add colorOS big clock style [1/2]
 ad532ea2dca9 SystemUI: Add NOS4 clock style [1/2]
 50f0845d3b35 Remove unused variables from SystemServer
@@ -71,116 +79,32 @@ ad532ea2dca9 SystemUI: Add NOS4 clock style [1/2]
 5438da9 light: Don't allow setting unavailable lights
 
 ========================================
- PROJECT: hardware/qcom-caf/sm8350/audio
+ PROJECT: lineage-sdk
 ========================================
-9596e4bcde Merge tag 'LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0' into staging/lineage-23.2_merge-LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8450-6.6/dataipa
-========================================
-3296f05f Merge tag 'LA.VENDOR.15.4.1.r1-10900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.15.4.1.r1-10900-WAIPIO.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8450/audio/agm
-========================================
-35c3491f Merge tag 'LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8450/audio/pal
-========================================
-a8c12069d Merge tag 'LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8450/audio/primary-hal
-========================================
-1e1e5aaee Merge tag 'LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8450/data-ipa-cfg-mgr
-========================================
-a17b3e29 Merge tag 'LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.1.0.r1-29900-WAIPIO.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8550/audio/primary-hal
-========================================
-aa1495561 Merge tag 'AUDIO.LA.8.0.r1-13000-KAILUA.0' into staging/lineage-23.2_merge-AUDIO.LA.8.0.r1-13000-KAILUA.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8550/data-ipa-cfg-mgr
-========================================
-a37a4556 Merge tag 'LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8550/dataipa
-========================================
-a9643396 Merge tag 'LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.13.2.0.r1-27800-KAILUA.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8650/audio/pal
-========================================
-8c4463eab Merge tag 'AUDIO.LA.9.0.r1-08900-lanai.0' into staging/lineage-23.2_merge-AUDIO.LA.9.0.r1-08900-lanai.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8650/audio/primary-hal
-========================================
-2aa541f62 Merge tag 'AUDIO.LA.9.0.r1-08900-lanai.0' into staging/lineage-23.2_merge-AUDIO.LA.9.0.r1-08900-lanai.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8650/data-ipa-cfg-mgr
-========================================
-0b5c3425 Merge tag 'LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8650/dataipa
-========================================
-1311e1cb Merge tag 'LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8750/audio/agm
-========================================
-853c0f6a Merge tag 'AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0' into staging/lineage-23.2_merge-AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8750/audio/pal
-========================================
-39f7cccd8 Merge tag 'AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0' into staging/lineage-23.2_merge-AUDIO_HANDSET.LA.10.0.r1-08100-pakala.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8750/data-ipa-cfg-mgr
-========================================
-5c754092 Merge tag 'LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/sm8750/dataipa
-========================================
-c6206833 Merge tag 'LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/thermal
-========================================
-05ea2d4 Merge tag 'LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.15.4.0.r1-21400-pakala.QSSI16.0
-
-========================================
- PROJECT: hardware/qcom-caf/thermal-legacy-um
-========================================
-ed71072 Merge tag 'LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0' into staging/lineage-23.2_merge-LA.VENDOR.14.3.0.r1-23100-lanai.QSSI16.0
+7abd967a Add statusbar popup action [3/3]
 
 ========================================
  PROJECT: lineage/hudson
 ========================================
+9ff722a Regenerate device dependency mappings
+7190742 Regenerate device dependency mappings
+04d7500 hudson: Add cas family
+946533c hudson: Add genevn to the roster
 dbd007b hudson: Add lamu family
 701aa1f Regenerate device dependency mappings
-53bf63e Regenerate device dependency mappings
 
 ========================================
  PROJECT: lineage/mirror
 ========================================
+e59e9b8 Updated to 16-Jul-2026 10:01 UTC
+906cba7 Updated to 15-Jul-2026 20:21 UTC
 909c062 Updated aosp-minimal to 14-Jul-2026 22:01 UTC
-a9b5381 Updated to 10-Jul-2026 22:01 UTC
 
 ========================================
  PROJECT: lineage/wiki
 ========================================
+1e24d31c devices: Add Xiaomi cas
+ef1e1643 wiki: Add moto g stylus 5G 2023 (genevn)
 f24674f8 wiki: Show `unlock_bootloader_guide` before `before_recovery_install`
 a5360441 wiki: Add Motorola moto g05 / g15 / g15 power
 eb696c61 wiki: Add ripple effect to dialog close button
@@ -200,6 +124,11 @@ f6051c7b wiki: devices: Add margin to checkboxes
 4256784 Automatic translation import
 
 ========================================
+ PROJECT: packages/apps/FMRadio
+========================================
+78dfedb Automatic translation import
+
+========================================
  PROJECT: packages/apps/Glimpse
 ========================================
 29694da Automatic translation import
@@ -212,7 +141,7 @@ f6051c7b wiki: devices: Add margin to checkboxes
 ========================================
  PROJECT: packages/apps/Launcher3
 ========================================
-21a51d7d55 Launcher3: Make folder bg transperent
+7b8ce94b95 Launcher3: Make folder bg transperent
 0943d06112 Revert "Launcher3: Apply material you palette to folder background"
 215d295a7f Launcher3: Set hotseat bar min space 0
 60766380b3 Launcher3: Gate BaseDepthController logs behind DEBUG flag
@@ -356,9 +285,20 @@ da6d49617f Launcher3: Improve quickspace alternate double layout
 25f2d8f Improve wallpaper renderer
 
 ========================================
+ PROJECT: packages/apps/Settings
+========================================
+5736b2e4729 Settings: Use system popup as default corner swipe gesture
+
+========================================
  PROJECT: packages/apps/Singularity
 ========================================
-99e3bfe Add colorOS big clock style [2/2]
+099c77c Allow to copy screenshots to clipboard instead of saving in storage [2/2]
+06fea52 Reorganized clock style
+92448f2 Clock style custom gradient color support [2/2]
+7a097cd Allow disable split landscape notification [2/2]
+800765c Add statusbar popup action [2/3]
+2d238a1 Make StatusBar icon popup configurable [2/2]
+1d5ec39 Add colorOS big clock style [2/2]
 e6b97c1 Add NOS4 clock style [2/2]
 f46fc9f crdroid: Add customization for bold clock and period separator
 4b864d6 Add screen-on memory reclaim toggle
@@ -369,34 +309,22 @@ f46fc9f crdroid: Add customization for bold clock and period separator
 2443487 Automatic translation import
 
 ========================================
- PROJECT: vendor/bcr
+ PROJECT: packages/resources/devicesettings
 ========================================
-376e1d1 BCR: Auto-update to version 3.4
+0c8e54f Automatic translation import
 
 ========================================
- PROJECT: vendor/qcom/opensource/audio-hal/st-hal
+ PROJECT: vendor/crowdin
 ========================================
-943789d Merge tag 'LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0' into staging/lineage-23.2_merge-LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0
+542010c Automatic translation import
+
+========================================
+ PROJECT: vendor/pixel/gms
+========================================
+22a649f gms: drop swipe gesture default value
 
 ========================================
  PROJECT: vendor/qcom/opensource/commonsys/fm
 ========================================
 87b347b Automatic translation import
-bb6f204 Merge tag 'LA.QSSI.16.0.r1-14000-qssi.0' into staging/lineage-23.2_merge-LA.QSSI.16.0.r1-14000-qssi.0
-3848508 Merge tag 'LA.QSSI.16.0.r1-13200-qssi.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/fm-commonsys into HEAD
-
-========================================
- PROJECT: vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um
-========================================
-897e6561 Merge tag 'LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0' into staging/lineage-23.2_merge-LA.UM.9.14.r1-26700-LAHAINA.QSSI16.0
-
-========================================
- PROJECT: vendor/qcom/opensource/interfaces
-========================================
-eb976d9 Merge tag 'LA.QSSI.16.0.r1-14000-qssi.0' into staging/lineage-23.2_merge-LA.QSSI.16.0.r1-14000-qssi.0
-
-========================================
- PROJECT: vendor/qcom/opensource/usb
-========================================
-9b4843b Merge tag 'LA.VENDOR.15.4.0.r1-21200-pakala.QSSI16.0' of https://git.codelinaro.org/clo/la/platform/vendor/qcom-opensource/usb into HEAD
 
