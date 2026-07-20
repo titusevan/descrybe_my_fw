@@ -1,32 +1,71 @@
 ========================================
- PROJECT: art
+ PROJECT: android
 ========================================
-0b7d7c4fde art: Optimize IsPathologicalCase with unlikely hints
+cb6dce7 Revert "build NOSAtmosphereEffect"
+2411aa1 Track more forks
 
 ========================================
  PROJECT: axion-sdk
 ========================================
-b0960b9 axion_sdk: material3: Update Material 3 library to v1.5.0-alpha23
+6fa7146 ax_blur: Restore old settings spec
+06c1a1b [ax_blur] blur enhancements from android 17
+835b86c improve blur
+916f7d0 [preferences] syncing corner radius with SettingsTheme expressive
+d9339c6 [feat] add shared compose route navigation
+08a761a [feat] add compose feature cards
+f557b77 axion_sdk: material3: Update Material 3 library to v1.5.0-alpha23
+1784988 adding xnnpack tflite deps
+04932d8 [tflite] adding axion tflite common deps
 
 ========================================
  PROJECT: bionic
 ========================================
-dabc539d7 bionic: drop long property-name warning spam
-6f6d36648 libm: optimize roundf with bit-based fast path
-
-========================================
- PROJECT: device/qcom/sepolicy_vndr/legacy-um
-========================================
-a61270bcd vendor: lahaina: Label hwmon node from motorola/sm7325
+d605aabfc [bugfix] fixing custom rom hide sysprop | crash issues
+f3ab1c1ff [dual_allocator] using jemalloc for display stack
 
 ========================================
  PROJECT: device/xiaomi/garnet
 ========================================
-2bd33da Add Russian for Singularity && Lunaris strings about device
+d291c9f Add Russian for Singularity && Lunaris strings about device
 
 ========================================
  PROJECT: frameworks/base
 ========================================
+331a482e2985 SystemUI: Use md3 font for starusbar lyric
+a0436773d30f SystemUI: DynamicBar: Hide nowplaying when keyguard panel visible
+a5db2f7e893c SystemUI: NowPlaying: Add music lyrics mode [1/2]
+58eae417ae56 SystemUI: NowPlaying: Honor tap-to-expand setting for expanded overlay
+76ab80607b59 SystemUI: Drop app icon next to media lyrics
+c14854451b7a SystemUI: add LyricsFetcher for LRCLIB synced/plain lyrics
+3745060fa841 SystemUI: Adapt status bar lyric to modern pipeline
+f6da050ba579 Status bar lyrics: Fix bug where some lyric would be wrongly ignored
+4eb5dd86ef59 statusbar: BP1A fixup for status bar lyric
+1f985bc55033 Adapt statusbar lyric for Android V
+8f94e9effbc9 SystemUI: Fix status bar lyric overlapping with the center clock
+4837ef37d20f fixup! [SQUASHED] base: Add status bar lyric for Android 14
+e7d4d5182672 [SQUASHED] base: Add status bar lyric for Android 14
+f9bfe71f21c4 fwb: Turn off some debugging we don't need
+b9fb6d86a24b AlarmManagerService: Reduce log level wtf -> w
+7db1f89c4b32 BluetoothUtils: Disable useless logspam
+ce0b6a3fb7bc base: Turn off some debugs
+083eac54d4cf SystemUI: DynamicBar: fall back to AOSP call pill when call event is disabled
+5051d11fbdb3 SystemUI: Use light theme for music chip and affordance buttom
+db0b294693d2 SystemUI: Add configurable icon size and row spacing for classic QS tiles [1/2]
+7c65825b3522 SystemUI: DynamicBar: Exclude timer, stopwatch and recording from circle style
+6daa2470401f services: Add missing ANON profile tracking
+0cbcde8d5082 SystemUI: DynamicBar: Add compact circle style [1/2]
+b5b06c247355 SystemUI: DynamicBar: Use accent color for keyguard chip action button bg
+9a6dc8a8a9b0 SystemUI: DynamicBar: Reduce statusbar media expanded bitmap size
+7930cd22e1ba core: Improve activity animation
+6a8c794b5e72 services: Enabling app image startup cache
+34ecab2e7cdc services: Fixing window exit animation concurrency bug
+834b5816d67f core: Fixing AnimatorSet concurrency issue
+e71298cd1029 SystemUI: Fixing power menu dialog stack issue
+80004f2c33c9 SystemUI: Optimizing shade blur render
+7fa1194c93be core: Fixing blur regions null crash
+a9fb77ecebd4 SystemUI: Show footer for essential notifications
+33476e386f44 SystemUI: Improving fps options
+15cf52d39254 SystemUI: SystemIconsPopup: Replace location with torch tile
 0d97024e6e02 SystemUI: SystemIconsPopup: Add `RECEIVER_NOT_EXPORTED` to all context-registered receivers
 338b2a626459 SystemUI: SystemIconsPopup: Persist toggle states across popup without re-querying
 e0e8b6a6ba35 SystemUI: SystemIconsPopup: Open media app on album art tap
@@ -51,32 +90,24 @@ ea8fca3b472e SystemUI: SystemIconsPopup: Adapt icon tint on ui theme change
 b03267c45ee7 SystemUI: SystemIconsPopup: Speed up the wave when charging
 e0cebb9d6571 SystemUI: SystemIconsPopup: Add more tiles
 c96d47146aa9 SystemUI: SystemIconsPopup: Improve charging stauts
-bbaf90c9e2aa SystemUI: Make StatusBar icon popup configurable [1/2]
-83d42b445fcd SystemUI: Add squish animation in StatusBar icon popup
-e9c0e52fcc01 SettingsLib: Fix UsageProgressBarPreference progress animation
-b52be6b842b6 [SystemUI] SystemIconsPopup: Drop redundant popup state tracking
-7dc8e0c56068 [SystemUI] SystemIconsPopup: Prevent dismiss animation restarts
-b2187f06b3b0 [SystemUI] SystemIconsPopup: Deduplicate popup theme setup
-96f8bf3f372f [SystemUI] SystemIconsPopup: Cut battery wave draw allocations
-bf8c3bd3591b [SystemUI] SystemIconsPopup: Defer animated value reads to draw phase
-f6c61805502d [SystemUI] SystemIconsPopup: Make connection status event-driven
-4a3ac65a09e9 [SystemUI] SystemIconsPopup: Replace telephony polling with callbacks
-f60856cbb8d1 [SystemUI] SystemIconsPopup: Update battery card from battery broadcasts
-4477d5c2bd8c [SystemUI] SystemIconsPopup: Use display-aware WindowManager
-a4b0f5886a8e [SystemUI] SystemIconsPopup: Show power menu via GlobalActionsComponent
-e6345c70d16a [SystemUI] Implement StatusBar icon popup view
-960b85b026f4 SystemUI: Add colorOS big clock style [1/2]
-ad532ea2dca9 SystemUI: Add NOS4 clock style [1/2]
-50f0845d3b35 Remove unused variables from SystemServer
-1b35afedb83d PixelPropsUtils: Update fingerprints to July 2026 release
-77b017c4d90f SystemUI: Add customization for bold clock and period separator
-6c54fbb01843 services: Add screen-on memory reclaim toggle
 
 ========================================
- PROJECT: hardware/lineage/interfaces
+ PROJECT: frameworks/native
 ========================================
-19b455c light: Add support for microphone & camera privacy LEDs
-5438da9 light: Don't allow setting unavailable lights
+970f71c93e libs: Cache renderengine textures
+4097831a37 libs: Adding glass blur filter v2
+a4a49ae507 fixup! libs: Add MTK GED-KPI support to fix MTK gpufreq
+5a11046ed3 libs: Add MTK GED-KPI support to fix MTK gpufreq
+5452b08d42 Remove buffer release channel logging
+d4488e1ba9 [Binder] Fix memory leaks in PersistableBundle
+9cb68eeac8 Use std::map when iterating over displays
+f4c15a4cf5 Increase BINDER_VM_SIZE from 1MB to 4MB
+024d8753bd system_server LW_EVENT_SYNC_NATIVE_CRASH in InputDispatcher
+5d56a7491c surfaceflinger: specifically no vote status bar
+7c5a998d57 fixup! [ax_perf] fixing dalvik|art|usap tuning regressions
+a5e552cf58 build: Fixing dalvik|art|usap tuning regressions
+10c6bc3c8b Add dither logic for MediaTek udfps optical devices
+6f93839ae5 native: blocking untrusted app lineage service checks
 
 ========================================
  PROJECT: lineage-sdk
@@ -86,203 +117,56 @@ ad532ea2dca9 SystemUI: Add NOS4 clock style [1/2]
 ========================================
  PROJECT: lineage/hudson
 ========================================
+969b826 Regenerate device dependency mappings
+e2e0ea8 updater: Mention SHIFTphone 8.1
+c9c7622 How powerfull is Odin??
 9ff722a Regenerate device dependency mappings
 7190742 Regenerate device dependency mappings
 04d7500 hudson: Add cas family
 946533c hudson: Add genevn to the roster
-dbd007b hudson: Add lamu family
-701aa1f Regenerate device dependency mappings
 
 ========================================
  PROJECT: lineage/mirror
 ========================================
+e76eaa4 Updated to 19-Jul-2026 18:01 UTC
 e59e9b8 Updated to 16-Jul-2026 10:01 UTC
 906cba7 Updated to 15-Jul-2026 20:21 UTC
-909c062 Updated aosp-minimal to 14-Jul-2026 22:01 UTC
 
 ========================================
  PROJECT: lineage/wiki
 ========================================
+994bcab5 wiki: Improve web flash tool info
+66c43968 wiki: Fix broken link in glossary
+e391594c wiki: Split otter into 8.0/8.1 variants
+aa536e17 devices: NB1: Use fastboot_misc recovery reboot method
+c04f3b7f wiki: Add fastboot_misc recovery reboot method
+0a8f7012 wiki: Add AYN Odin (M0/M2)
+fff45b24 devices: nicepool: Fix instructions
+18b9cae4 wiki: Remove unwanted leading space from commands
 1e24d31c devices: Add Xiaomi cas
 ef1e1643 wiki: Add moto g stylus 5G 2023 (genevn)
-f24674f8 wiki: Show `unlock_bootloader_guide` before `before_recovery_install`
-a5360441 wiki: Add Motorola moto g05 / g15 / g15 power
-eb696c61 wiki: Add ripple effect to dialog close button
-2961ff24 wiki: Add ripple effect on navbar
-45b088c1 wiki: Animate mobile buttons properly
-22ca6d0e wiki: Add aarch64-linux platform to bundle
-98c7138a wiki: devices: Style popups properly
-e0b94e15 wiki: Replace custom dialogs with standard elements
-d36a1100 wiki: devices: Wrap too long device names
-71d1cca6 wiki: devices: Theme checkboxes properly
-f6051c7b wiki: devices: Add margin to checkboxes
-8c762417 wiki: Add margin to top title
 
 ========================================
- PROJECT: packages/apps/Aperture
+ PROJECT: packages/apps/AppLocker
 ========================================
-4256784 Automatic translation import
-
-========================================
- PROJECT: packages/apps/FMRadio
-========================================
-78dfedb Automatic translation import
-
-========================================
- PROJECT: packages/apps/Glimpse
-========================================
-29694da Automatic translation import
-
-========================================
- PROJECT: packages/apps/Jelly
-========================================
-6517f6a Automatic translation import
+b95a226 updating to PBKDF2
+ea30ef4 removing unnecessary result cancel finish
 
 ========================================
  PROJECT: packages/apps/Launcher3
 ========================================
+b18aafa452 Launcher3: Do not show app info for folder
+cfcbca13a0 Launcher3: Update NOSAtmosphereEffect package name [1/2]
+8ee102c7b3 Launcher3: Implement Enlarge folders and Folder customisations
+d101a585df Update blur style for more things.
 7b8ce94b95 Launcher3: Make folder bg transperent
-0943d06112 Revert "Launcher3: Apply material you palette to folder background"
-215d295a7f Launcher3: Set hotseat bar min space 0
-60766380b3 Launcher3: Gate BaseDepthController logs behind DEBUG flag
-71c9bc2cb3 Launcher3: Disable Input events debug
-6df5f8bdfb Launcher3: Set themed icon scale default value 100 [2/2]
-f3d20b1ccc Launcher3: Add Atmosphere effects option to launcher popup menu
-ee3a152ebd Launcher3: Themed icon customization [1/2]
-ec10b0f575 Launcher3: Fix redesign collapsing when all its buttons are hidden
-d48c5e377f Launcher3: Allow use qsb widget in vanilla build
-f3c06ee0e2 Launcher3: Add blur for homescreen popup menu
-e0f2e7afe1 Launcher3: Enable blur on surfaces by default
-6a8ef35160 Launcher3: Set workspace blur outline after folder animation too
-1587536cdd Launcher3: Update DeepShortcutView in the case of using blur
-dcd22ae4f7 Launcher3: Blur homescreen menu
-bd8f720d18 Launcher3: Support blur in Launcher folders
-671a7e5546 Launcher3: Add support for third-party search widgets in dock
-b623a855d7 fixup! Launcher3: Improve workspace animation
-7a4f93078c Launcher3: Fix bottom searchbar not moving when keyboard open
-8c7d4daca0 Launcher3: Add icon search support in custom icon
-6e915a17ac Launcher: Add per-app icon picker
-c3edd8d6b0 Launcher3: Allow disable extra qsb bottom space
-bf57c12b0c Launcher3: Allow setting auto-rotation on phone devices
-daab1c5469 Launcher3: Update icons on dynamic color changes
-8d0631ea05 Launcher3: Improve app rename feature
-a1e6843a1e Launcher3: Adjust boost duration
-2c2cccdb4f fixup! feat: appdrawer searchbar location
-a19ca61a0a Launcher3: fix bottom sheet statusbar color
-34d82fed7c Launcher: Force update statusbar color on allapps
-3f7a4875fd Launcher: Cancel ongoing animations before entering allapps
-9169686feb Fix AllAppsActionManager race condition from user switch
-b7a03dc2b1 Launcher3: hide home screen in fullscreen appdrawer styles
-75461a29ef Launcher3: Add app rename feature
-d08c65ae38 Launcher3: Add smooth press animation to all action buttons
-176c86f570 Launcher3: Launcher animation boost
-ebacc3d7a1 Launcher3: Improve workspace animation
-99d33ef60b Launcher3: Notify renderer on blur scrim creation
-67b83323fc Launcher3: Add blur in app close animation
-c0d24a4633 Launcher3: Add optional toggle for app launch blur animation
-9445f6c161 Launcher3: Increase CPU clock speed when enabling early wakeup.
-f5f16d0ea2 Update app launch blur interpolation
-8633e0565c Skip WorkspaceRevealAnim for app to Launcher while Overview is active
-a56fdd0184 Should use unfilteredApps when getting Launcher target
-a8c8d8e78b Launcher3: App launch animation with blur and pushback
-6739cdae02 Launcher3: Simplify QSB background color selection
-c3cbdf2886 Launcher3: Use google search bar style in app drawer for compact search bar
-70cc15aca9 Launcher3: Fix default all app search icon size
-f9cabf9241 Launcher3: Increase hotseat qsb space
-edf94e8ac3 Launcher3: Move weather query to background runnable
-f30d91f4f6 Launcher3: Redesign App drawer search bar to Pixel style
-7bc01e7e29 Launcher3: Fix touch area for compact search bar
-1afdf644a7 Launcher3: make lock gesture toggleable
-6ae6085245 Launcher3: make navbar burn-in toggleable
-aecec22c06 Launcher3: Finish recents commands after RecentsActivity relaunch
-28aa41193d handle legacy home task mismatch in recents
-b4cb37dc4d backport Pixel 17 Beta 4 recents animation start timeout dispatch
-5d595f8d61 Launcher3: Add toggle to disable scroll vibration
-7226a414cc Launcher3: Tune compact searchbar layout
-92bc47ad04 Launcher3: Use md3 font for compact searchbar
-a397abb3d0 Launcher3: Add compact search action setting
-83d21fe12c Launcher3: Add compact search bar
-c863eb359a Launcher3: optimizing app to workspace animation
-7b7e586163 Launcher3: Introduce LauncherProcessImageListener for downscaling images in Launcher.
-1fe281d269 Launcher3: Add split screen option for Recent app swipe action
-cad014424d Launcher3: Debug overview logs
-439374f2cc Launcher3: Disabling base activity debug
-f60559feff Launcher3: Disabling state manager debugging
-84efe9f7ab Launcher3: Improve overview buttons colors
-48fa297f69 Launcher3: Refresh quickspace PSA random messages with more playful
-d29aebc44a Launcher3: Fix App info transition manager ownership
-8ab2683c3b Launcher3: Do not show lens when qsb off
-b46c10ae19 Launcher3: Animation optimization
-542adc1161 fixup! Launcher3: Improve app to home animation
-cd48232806 Launcher3: Fix custom recents scale settle animation after dismiss
-5c771ed4f0 Launcher3: Fix stack recents dismiss reflow
-a8bc37f568 Launcher3: Fix animation snapping when entering custom recents
-cd06bf1617 Launcher3: Fix inconsistent task corner radius in custom recents styles
-409debb78e Launcher3: Fix recents style gesture cleanup
-b7ec437066 Launcher3: Respect adaptive icon pack shapes
-1d42b19d63 Launcher3: Add notification badge counts
-4fe02f2c9d Launcher3: Add recents task corner radius setting
-543e291a81 Launcher3: Fix page indicator overlay on home screen
-9742926afa Launcher3: Fix swipe-down-lock not moving entire TaskView on current app
-09753dded7 Launcher3: Implement swipe-down-to-lock in Recents overview
-91e39342db Launcher3: Add dynamic lock icon swap on app chip bar
-76951d7d6c Launcher3: quickspace: replace clock color polling with static split TextClock
-21d5b0c7c4 Revert "Launcher3: Disable wallpaper zoom and scroll by default"
-bff89f8046 Launcher3: Cache spring parameters in RectFSpringAnim
-0a50ada893 Launcher3: Minimize per-frame allocations and calls in RecentsView
-e395a3f84c Launcher3: Minimize per-frame allocations and calls in QuickstepTransitionManager
-b72fd97263 Launcher3: AllApps: Minimize hw layers only when necessary
-23d8e8e020 Launcher3: AllAppsList: Move calculateDiff to bg thread
-2c402d8d5d Launcher3: Reduce per-frame allocations in QuickstepTransitionManager
-af6d5725a2 Launcher3: Add simple optimizations
-1677e65afb Launcher3: Remove recents view animation styles on tablets
-8ecfd12940 Launcher3: Fix race condition in recent view animation styles
-a4c7af417c Launcher3: Add default style for recents view animation
-e5b6aa9c57 Launcher3: Fix build errors in RecentsView and TaskViewTouchControllerDeprecated
-9bdd39aef3 Launcher3: Fix stack mess on dismiss cancel gesture
-1323192303 Launcher3: Fix z-index order when dragging a card
-b7996b536d Launcher3: Make recents view dismiss animations smoother
-13e97e5bc2 Launcher3: Apply custom recent view styles immediately
-90c5e9080a Launcher3: Add custom recent view styles
-7771b4b6a0 Launcher3: Fix up sandbox camera locked icon
-d3fb6c2b64 Launcher3: Fix performance issues with OneUI app drawer style
-6316582798 Launcher3: Fix querying the total package hidden count
-2de1ce79ab Launcher3: Lazily retrieve the total package hidden count
-c07690671c Launcher3: Setup material expressive design for TrustActivity
-0834e027f5 Launcher3: TrustAppsActivity: Switch to collapsing toolbar
-3c55c36e2d Launcher3: Improve hidden & protected apps
-1a599ce409 Launcher3: Implement hidden & protected apps
-f76ee388d5 Launcher3: Reduce quickspace clock start padding
-e02e018740 Launcher3: Add scale-down visual feedback for freeform gesture
-2a9606c050 Launcher3: Use ticking vibration effect for freeform gesture
-c39bb8f5a9 Launcher3: Add swipe up gesture for freeform mode Introduce a new gesture in the recents/overview screen. Swiping up & hold on a recent task will now launch the application directly into a freeform (floating) window. This feature ports the original Xposed logic authored by ZL114514 & refactored by Mahmud0808 from the PixelLauncherEnhanced project to be natively integrated. Replaced Xposed method hooks with direct native launcher calls.
-3237333125 Launcher3: Remove duplicate quickspace pref
-82f9ce4eaa Launcher3: Fixing stack trace cpu drain
-534e374210 Launcher3: Improve app to home animation
-8cd7c41c10 Launcher3: Add sandbox hooks
-5dc61bf627 Launcher3: Add rounded hexagon shape
-af0114ef41 Launcher3: Remove scroll shape
-ac822a0657 Launcher3: Eliminate clock color update delay on wake
-ac0ed1a980 Launcher3: Give proper OOS clock look
-feaf225c2d Launcher3: Reduce quickspace OOS clock size
-9c8d0459b4 Launcher: Improve quickspace OOS clock style
-9de64bf94e Launcher3: Implement OOS clock style from vos
-60d8e3c1ec Launcher3: Use MD3 variable font family in QuickSpace
-b0a813f432 Launcher3: Fix Google-style search bar outer color
-0cb7ae5f82 Launcher3: Fixing div by zero animation crash
-c10b3b95fb Launcher3: Fixing SimpleBroadcastReceiver leak
-c7b3723639 Launcher3: Stopping taskbar draws when stashed
-a91cdcc6a4 Launcher3: Fix gesture abort freeze when nav hint disabled
-6e811d8dd0 Revert "Launcher3: Fix screen freeze with navigation hint disabled"
-4d0d0b9cde Revert "Launcher3: Do not hide navigation hint completely"
-4bcf0e0561 Launcher3: Show native clear all button on tablets
-da6d49617f Launcher3: Improve quickspace alternate double layout
 
 ========================================
- PROJECT: packages/apps/NOSAtmosphereEffect
+ PROJECT: packages/apps/Sandbox
 ========================================
-5ccea8f Weird blur bug fix try
-25f2d8f Improve wallpaper renderer
+d716aa4 [vault] enhancing | fixing issues
+3df12cb updating to PBKDF2
+1b09bea removing WindowModeUtil
 
 ========================================
  PROJECT: packages/apps/Settings
@@ -292,39 +176,51 @@ da6d49617f Launcher3: Improve quickspace alternate double layout
 ========================================
  PROJECT: packages/apps/Singularity
 ========================================
+124cad9 Add music lyrics mode [2/2]
+f3e5d6a Add status bar lyric [2/2]
+72f0849 Update NOSAtmosphereEffect package name [2/2]
+314dd3c add configurable icon size and row spacing for classic QS tiles [2/2]
+cf21c76 Add compact circle style [2/2]
 099c77c Allow to copy screenshots to clipboard instead of saving in storage [2/2]
 06fea52 Reorganized clock style
 92448f2 Clock style custom gradient color support [2/2]
 7a097cd Allow disable split landscape notification [2/2]
 800765c Add statusbar popup action [2/3]
-2d238a1 Make StatusBar icon popup configurable [2/2]
-1d5ec39 Add colorOS big clock style [2/2]
-e6b97c1 Add NOS4 clock style [2/2]
-f46fc9f crdroid: Add customization for bold clock and period separator
-4b864d6 Add screen-on memory reclaim toggle
 
 ========================================
- PROJECT: packages/apps/Twelve
+ PROJECT: system/core
 ========================================
-2443487 Automatic translation import
+2e95acc3e adding guard to verified_boot_state check
+acbdcf11e allowing access to tensorflow libs
 
 ========================================
- PROJECT: packages/resources/devicesettings
+ PROJECT: system/sepolicy
 ========================================
-0c8e54f Automatic translation import
+53cb88c3a [bugfix] fixing dex2oat overcommit memory access
 
 ========================================
- PROJECT: vendor/crowdin
+ PROJECT: vendor/apn
 ========================================
-542010c Automatic translation import
+3169b43 apns: Update Philippines APNs
+
+========================================
+ PROJECT: vendor/bcr
+========================================
+c7c22f9 BCR: Auto-update to version 3.5
+
+========================================
+ PROJECT: vendor/extras
+========================================
+c8bdfc4c extras: Build NOSAtmosphereEffect
+
+========================================
+ PROJECT: vendor/lineage
+========================================
+06959855 overlay: Increase maximum wallpaper scale
+f8bbe9c6 lineage: Introduce a simple program for disabling adb remount overlays
 
 ========================================
  PROJECT: vendor/pixel/gms
 ========================================
 22a649f gms: drop swipe gesture default value
-
-========================================
- PROJECT: vendor/qcom/opensource/commonsys/fm
-========================================
-87b347b Automatic translation import
 
