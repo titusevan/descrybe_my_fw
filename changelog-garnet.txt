@@ -13,15 +13,6 @@ cb6dce7 Revert "build NOSAtmosphereEffect"
 916f7d0 [preferences] syncing corner radius with SettingsTheme expressive
 d9339c6 [feat] add shared compose route navigation
 08a761a [feat] add compose feature cards
-f557b77 axion_sdk: material3: Update Material 3 library to v1.5.0-alpha23
-1784988 adding xnnpack tflite deps
-04932d8 [tflite] adding axion tflite common deps
-
-========================================
- PROJECT: bionic
-========================================
-d605aabfc [bugfix] fixing custom rom hide sysprop | crash issues
-f3ab1c1ff [dual_allocator] using jemalloc for display stack
 
 ========================================
  PROJECT: device/xiaomi/garnet
@@ -55,18 +46,6 @@ db0b294693d2 SystemUI: Add configurable icon size and row spacing for classic QS
 7c65825b3522 SystemUI: DynamicBar: Exclude timer, stopwatch and recording from circle style
 6daa2470401f services: Add missing ANON profile tracking
 0cbcde8d5082 SystemUI: DynamicBar: Add compact circle style [1/2]
-b5b06c247355 SystemUI: DynamicBar: Use accent color for keyguard chip action button bg
-9a6dc8a8a9b0 SystemUI: DynamicBar: Reduce statusbar media expanded bitmap size
-7930cd22e1ba core: Improve activity animation
-6a8c794b5e72 services: Enabling app image startup cache
-34ecab2e7cdc services: Fixing window exit animation concurrency bug
-834b5816d67f core: Fixing AnimatorSet concurrency issue
-e71298cd1029 SystemUI: Fixing power menu dialog stack issue
-80004f2c33c9 SystemUI: Optimizing shade blur render
-7fa1194c93be core: Fixing blur regions null crash
-a9fb77ecebd4 SystemUI: Show footer for essential notifications
-33476e386f44 SystemUI: Improving fps options
-15cf52d39254 SystemUI: SystemIconsPopup: Replace location with torch tile
 
 ========================================
  PROJECT: frameworks/libs/systemui
@@ -77,19 +56,6 @@ a9fb77ecebd4 SystemUI: Show footer for essential notifications
  PROJECT: frameworks/native
 ========================================
 970f71c93e libs: Cache renderengine textures
-4097831a37 libs: Adding glass blur filter v2
-a4a49ae507 fixup! libs: Add MTK GED-KPI support to fix MTK gpufreq
-5a11046ed3 libs: Add MTK GED-KPI support to fix MTK gpufreq
-5452b08d42 Remove buffer release channel logging
-d4488e1ba9 [Binder] Fix memory leaks in PersistableBundle
-9cb68eeac8 Use std::map when iterating over displays
-f4c15a4cf5 Increase BINDER_VM_SIZE from 1MB to 4MB
-024d8753bd system_server LW_EVENT_SYNC_NATIVE_CRASH in InputDispatcher
-5d56a7491c surfaceflinger: specifically no vote status bar
-7c5a998d57 fixup! [ax_perf] fixing dalvik|art|usap tuning regressions
-a5e552cf58 build: Fixing dalvik|art|usap tuning regressions
-10c6bc3c8b Add dither logic for MediaTek udfps optical devices
-6f93839ae5 native: blocking untrusted app lineage service checks
 
 ========================================
  PROJECT: lineage/hudson
@@ -121,25 +87,11 @@ c04f3b7f wiki: Add fastboot_misc recovery reboot method
 0a8f7012 wiki: Add AYN Odin (M0/M2)
 
 ========================================
- PROJECT: packages/apps/AppLocker
-========================================
-b95a226 updating to PBKDF2
-ea30ef4 removing unnecessary result cancel finish
-
-========================================
  PROJECT: packages/apps/Launcher3
 ========================================
 b18aafa452 Launcher3: Do not show app info for folder
 cfcbca13a0 Launcher3: Update NOSAtmosphereEffect package name [1/2]
 8ee102c7b3 Launcher3: Implement Enlarge folders and Folder customisations
-d101a585df Update blur style for more things.
-
-========================================
- PROJECT: packages/apps/Sandbox
-========================================
-d716aa4 [vault] enhancing | fixing issues
-3df12cb updating to PBKDF2
-1b09bea removing WindowModeUtil
 
 ========================================
  PROJECT: packages/apps/Singularity
@@ -148,18 +100,6 @@ d716aa4 [vault] enhancing | fixing issues
 f3e5d6a Add status bar lyric [2/2]
 72f0849 Update NOSAtmosphereEffect package name [2/2]
 314dd3c add configurable icon size and row spacing for classic QS tiles [2/2]
-cf21c76 Add compact circle style [2/2]
-
-========================================
- PROJECT: system/core
-========================================
-2e95acc3e adding guard to verified_boot_state check
-acbdcf11e allowing access to tensorflow libs
-
-========================================
- PROJECT: system/sepolicy
-========================================
-53cb88c3a [bugfix] fixing dex2oat overcommit memory access
 
 ========================================
  PROJECT: vendor/apn
