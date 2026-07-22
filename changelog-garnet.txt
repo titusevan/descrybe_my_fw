@@ -26,7 +26,7 @@ f3ab1c1ff [dual_allocator] using jemalloc for display stack
 ========================================
  PROJECT: device/xiaomi/garnet
 ========================================
-d291c9f Add Russian for Singularity && Lunaris strings about device
+e13d2fa Add Russian for Singularity && Lunaris strings about device
 
 ========================================
  PROJECT: frameworks/base
