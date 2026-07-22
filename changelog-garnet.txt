@@ -31,11 +31,12 @@ d291c9f Add Russian for Singularity && Lunaris strings about device
 ========================================
  PROJECT: frameworks/base
 ========================================
-331a482e2985 SystemUI: Use md3 font for starusbar lyric
-a0436773d30f SystemUI: DynamicBar: Hide nowplaying when keyguard panel visible
-a5db2f7e893c SystemUI: NowPlaying: Add music lyrics mode [1/2]
-58eae417ae56 SystemUI: NowPlaying: Honor tap-to-expand setting for expanded overlay
-76ab80607b59 SystemUI: Drop app icon next to media lyrics
+3c3afa5a2fde SystemUI: DynamicBar: Improve keyguard chip layout
+90e7ac7ccffb SystemUI: Add retry mechanism in lyric fetcher
+91bce37d8745 SystemUI: Use md3 font for starusbar lyric
+c23a87231ef5 SystemUI: DynamicBar: Hide nowplaying when keyguard panel visible
+bb5f2c49595b SystemUI: NowPlaying: Add music lyrics mode [1/2]
+981cb8d89d6a SystemUI: NowPlaying: Honor tap-to-expand setting for expanded overlay
 c14854451b7a SystemUI: add LyricsFetcher for LRCLIB synced/plain lyrics
 3745060fa841 SystemUI: Adapt status bar lyric to modern pipeline
 f6da050ba579 Status bar lyrics: Fix bug where some lyric would be wrongly ignored
@@ -66,30 +67,11 @@ e71298cd1029 SystemUI: Fixing power menu dialog stack issue
 a9fb77ecebd4 SystemUI: Show footer for essential notifications
 33476e386f44 SystemUI: Improving fps options
 15cf52d39254 SystemUI: SystemIconsPopup: Replace location with torch tile
-0d97024e6e02 SystemUI: SystemIconsPopup: Add `RECEIVER_NOT_EXPORTED` to all context-registered receivers
-338b2a626459 SystemUI: SystemIconsPopup: Persist toggle states across popup without re-querying
-e0e8b6a6ba35 SystemUI: SystemIconsPopup: Open media app on album art tap
-e181622fd5ef SystemUI: Allow to copy screenshots to clipboard instead of saving in storage [1/3]
-89ccbd84e3b2 SystemUI: Clock style custom gradient color support [1/2]
-7f383f9d2b3b SystemUI: SystemIconsPopup: Add haptic feedback on quick toggle tap
-f8e55a64c7bc SystemUI: SystemIconsPopup: Add bouncy popup effect
-29eb79d88435 SystemUI: SystemIconsPopup: Add media panel to quick popup
-e2217dc966f7 SystemUI: Allow disable split landscape notification [1/2]
-9454b92b1a50 Fix crash with media carousel pager update
-6e640d6138e1 increase flashlight dialog separator contrast
-32dfd4e5c531 SystemUI: Fix stale longClickable of system popup breaking QS swipe
-63e9df20130a SystemUI: Gate notification blur with transparency settings
-49ebd4641765 SystemUI: Implement realtime blur for heads up notifications
-ef39e9aefc4e SystemUI: Add system icon popup in gesture action [1/3]
-a5021d5c6e4c SystemUI: SystemIconsPopup: Match battery card background to other inactive tiles
-1f63ea4fe6b9 SystemUI: SystemIconsPopup: Clip ripple to card shape for battery/data cards
-ea8fca3b472e SystemUI: SystemIconsPopup: Adapt icon tint on ui theme change
-303ec25060dd SystemUI: SystemIconsPopup: Add data switch support in cards
-78c76c8714aa SystemUI: SystemIconsPopup: Opens the system Battery on battery card click
-5d334df90cfe SystemUI: SystemIconsPopup: Battery ring pulse near critical/full
-b03267c45ee7 SystemUI: SystemIconsPopup: Speed up the wave when charging
-e0cebb9d6571 SystemUI: SystemIconsPopup: Add more tiles
-c96d47146aa9 SystemUI: SystemIconsPopup: Improve charging stauts
+
+========================================
+ PROJECT: frameworks/libs/systemui
+========================================
+85e49ac weathereffects: Fixing snow effect not working on some devices
 
 ========================================
  PROJECT: frameworks/native
@@ -110,41 +92,33 @@ a5e552cf58 build: Fixing dalvik|art|usap tuning regressions
 6f93839ae5 native: blocking untrusted app lineage service checks
 
 ========================================
- PROJECT: lineage-sdk
-========================================
-7abd967a Add statusbar popup action [3/3]
-
-========================================
  PROJECT: lineage/hudson
 ========================================
+8df95c8 husdon: Add mars to build targets
+b3296a7 hudson: add h873
 969b826 Regenerate device dependency mappings
 e2e0ea8 updater: Mention SHIFTphone 8.1
 c9c7622 How powerfull is Odin??
-9ff722a Regenerate device dependency mappings
-7190742 Regenerate device dependency mappings
-04d7500 hudson: Add cas family
-946533c hudson: Add genevn to the roster
 
 ========================================
  PROJECT: lineage/mirror
 ========================================
+53438e3 Updated aosp-minimal to 21-Jul-2026 18:02 UTC
 e76eaa4 Updated to 19-Jul-2026 18:01 UTC
-e59e9b8 Updated to 16-Jul-2026 10:01 UTC
-906cba7 Updated to 15-Jul-2026 20:21 UTC
 
 ========================================
  PROJECT: lineage/wiki
 ========================================
+12c0c942 wiki: "GB GB" -> " GB"
+4678ea12 devices: lemonades: Correct the firmware requirements
+a7fda2dc wiki: devices: Promote mars to 23.2
+1832e52b devices: Add H873 LG G6 variant
 994bcab5 wiki: Improve web flash tool info
 66c43968 wiki: Fix broken link in glossary
 e391594c wiki: Split otter into 8.0/8.1 variants
 aa536e17 devices: NB1: Use fastboot_misc recovery reboot method
 c04f3b7f wiki: Add fastboot_misc recovery reboot method
 0a8f7012 wiki: Add AYN Odin (M0/M2)
-fff45b24 devices: nicepool: Fix instructions
-18b9cae4 wiki: Remove unwanted leading space from commands
-1e24d31c devices: Add Xiaomi cas
-ef1e1643 wiki: Add moto g stylus 5G 2023 (genevn)
 
 ========================================
  PROJECT: packages/apps/AppLocker
@@ -159,7 +133,6 @@ b18aafa452 Launcher3: Do not show app info for folder
 cfcbca13a0 Launcher3: Update NOSAtmosphereEffect package name [1/2]
 8ee102c7b3 Launcher3: Implement Enlarge folders and Folder customisations
 d101a585df Update blur style for more things.
-7b8ce94b95 Launcher3: Make folder bg transperent
 
 ========================================
  PROJECT: packages/apps/Sandbox
@@ -169,11 +142,6 @@ d716aa4 [vault] enhancing | fixing issues
 1b09bea removing WindowModeUtil
 
 ========================================
- PROJECT: packages/apps/Settings
-========================================
-5736b2e4729 Settings: Use system popup as default corner swipe gesture
-
-========================================
  PROJECT: packages/apps/Singularity
 ========================================
 124cad9 Add music lyrics mode [2/2]
@@ -181,11 +149,6 @@ f3e5d6a Add status bar lyric [2/2]
 72f0849 Update NOSAtmosphereEffect package name [2/2]
 314dd3c add configurable icon size and row spacing for classic QS tiles [2/2]
 cf21c76 Add compact circle style [2/2]
-099c77c Allow to copy screenshots to clipboard instead of saving in storage [2/2]
-06fea52 Reorganized clock style
-92448f2 Clock style custom gradient color support [2/2]
-7a097cd Allow disable split landscape notification [2/2]
-800765c Add statusbar popup action [2/3]
 
 ========================================
  PROJECT: system/core
@@ -218,9 +181,4 @@ c8bdfc4c extras: Build NOSAtmosphereEffect
 ========================================
 06959855 overlay: Increase maximum wallpaper scale
 f8bbe9c6 lineage: Introduce a simple program for disabling adb remount overlays
-
-========================================
- PROJECT: vendor/pixel/gms
-========================================
-22a649f gms: drop swipe gesture default value
 

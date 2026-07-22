@@ -4,12 +4,12 @@
             "maintainer": "titusevan",
             "oem": "",
             "device": "garnet",
-            "filename": "Lunaris-AOSP-garnet-Community-3.12-GMS-2026072015.zip",
-            "download": "https://saz.mksat.net/firmware/Lunaris-AOSP-garnet-Community-3.12-GMS-2026072015.zip",
-            "timestamp": 1784562060,
-            "md5": "8ecb689cc0acb4425b1a47a64ed855cd",
-            "sha256": "5a5d5d83749b1386602aa767b7ed4260d8b48b5a930523ae9e334ef7d3353af6",
-            "size": 2994898981,
+            "filename": "Lunaris-AOSP-garnet-Community-3.12-GMS-2026072206.zip",
+            "download": "https://saz.mksat.net/firmware/Lunaris-AOSP-garnet-Community-3.12-GMS-2026072206.zip",
+            "timestamp": 1784702925,
+            "md5": "0d8302bb3b9ac0c6e698ae3eda6a5c1c",
+            "sha256": "2544e65941331cf1d19ff239e0d54683ea5f8240bd4535d202f3df45d328b042",
+            "size": 2975732130,
             "version": "3.12",
             "buildtype": "userdebug",
             "forum": "",
@@ -23,7 +23,7 @@
             "dt": "",
             "common-dt": "",
             "kernel": "",
-            "datetime": 1784562060
+            "datetime": 1784702925
         }
     ]
 }
