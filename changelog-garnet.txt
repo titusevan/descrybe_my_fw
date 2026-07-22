@@ -2,7 +2,6 @@
  PROJECT: android
 ========================================
 cb6dce7 Revert "build NOSAtmosphereEffect"
-2411aa1 Track more forks
 
 ========================================
  PROJECT: axion-sdk
@@ -10,9 +9,6 @@ cb6dce7 Revert "build NOSAtmosphereEffect"
 6fa7146 ax_blur: Restore old settings spec
 06c1a1b [ax_blur] blur enhancements from android 17
 835b86c improve blur
-916f7d0 [preferences] syncing corner radius with SettingsTheme expressive
-d9339c6 [feat] add shared compose route navigation
-08a761a [feat] add compose feature cards
 
 ========================================
  PROJECT: device/xiaomi/garnet
@@ -45,7 +41,6 @@ ce0b6a3fb7bc base: Turn off some debugs
 db0b294693d2 SystemUI: Add configurable icon size and row spacing for classic QS tiles [1/2]
 7c65825b3522 SystemUI: DynamicBar: Exclude timer, stopwatch and recording from circle style
 6daa2470401f services: Add missing ANON profile tracking
-0cbcde8d5082 SystemUI: DynamicBar: Add compact circle style [1/2]
 
 ========================================
  PROJECT: frameworks/libs/systemui
