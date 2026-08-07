@@ -1,119 +1,238 @@
 ========================================
  PROJECT: android
 ========================================
-cb6dce7 Revert "build NOSAtmosphereEffect"
-
-========================================
- PROJECT: axion-sdk
-========================================
-6fa7146 ax_blur: Restore old settings spec
-06c1a1b [ax_blur] blur enhancements from android 17
-835b86c improve blur
+6fd3c23 Track system_media
 
 ========================================
  PROJECT: device/xiaomi/garnet
 ========================================
-e13d2fa Add Russian for Singularity && Lunaris strings about device
+ffee433 overlay: Add webview pinning; Set default pin amount for home app
+66aeccc garnet: Remove charge activity and update translations
 
 ========================================
  PROJECT: frameworks/base
 ========================================
-3c3afa5a2fde SystemUI: DynamicBar: Improve keyguard chip layout
-90e7ac7ccffb SystemUI: Add retry mechanism in lyric fetcher
-91bce37d8745 SystemUI: Use md3 font for starusbar lyric
-c23a87231ef5 SystemUI: DynamicBar: Hide nowplaying when keyguard panel visible
-bb5f2c49595b SystemUI: NowPlaying: Add music lyrics mode [1/2]
-981cb8d89d6a SystemUI: NowPlaying: Honor tap-to-expand setting for expanded overlay
-c14854451b7a SystemUI: add LyricsFetcher for LRCLIB synced/plain lyrics
-3745060fa841 SystemUI: Adapt status bar lyric to modern pipeline
-f6da050ba579 Status bar lyrics: Fix bug where some lyric would be wrongly ignored
-4eb5dd86ef59 statusbar: BP1A fixup for status bar lyric
-1f985bc55033 Adapt statusbar lyric for Android V
-8f94e9effbc9 SystemUI: Fix status bar lyric overlapping with the center clock
-4837ef37d20f fixup! [SQUASHED] base: Add status bar lyric for Android 14
-e7d4d5182672 [SQUASHED] base: Add status bar lyric for Android 14
-f9bfe71f21c4 fwb: Turn off some debugging we don't need
-b9fb6d86a24b AlarmManagerService: Reduce log level wtf -> w
-7db1f89c4b32 BluetoothUtils: Disable useless logspam
-ce0b6a3fb7bc base: Turn off some debugs
-083eac54d4cf SystemUI: DynamicBar: fall back to AOSP call pill when call event is disabled
-5051d11fbdb3 SystemUI: Use light theme for music chip and affordance buttom
-db0b294693d2 SystemUI: Add configurable icon size and row spacing for classic QS tiles [1/2]
-7c65825b3522 SystemUI: DynamicBar: Exclude timer, stopwatch and recording from circle style
-6daa2470401f services: Add missing ANON profile tracking
+3428c2b2d5d7 SystemUI: DynamicIsland: Update flashlight icon
+980d73990a59 SystemUI: DynamicIsland: Redesign media visualizer
+20de1b5f04b8 fixup! SystemUI: Header Clocks Fix for light theme
+acd75a1a128a MediaPlayer: stop logspam
+845105b3b516 SystemUI: Header Clocks Fix for light theme
+24cdf76fdcc0 QS Clocks: Update OOS clock style
+87bf236b74b5 Add QS Header Clock styles
+dda751ddb46a core: Make min/max fling velocity user-configurable [1/2]
+9cf0f45ad365 fixup! SystemUI: Merge md3 animation with animation style [1/2]
+e93511a23f6f SystemUI: DynamicBar: Fix empty space when statusbar media disable
+9bd09e86b707 SystemUI: Add one-time hotspot data limit (1/2)
+ff7ecdb4e8e1 SystemUI: OnTheGo: Redesign dialog
+cc649ff93199 SystemUI: OnTheGo: Run as camera FGS and fix preview size
+02dd4b567a53 SystemUI: OnTheGo: Fix overlay swallowing all touch input
+a99b4682d57e SystemUI: DynamicBar: Compute per-surface event count for chip badge
+478ed6efb601 SystemUI: DynamicBar: Decouple keyguard music pill from statusbar media toggle
+876cdf1629ee SystemUI: DynamicIsland: Pin media popup waveform seekbar to accent color
+10e8ad2e601f SystemUI: DynamicIsland: Add haptic feedback to media popup control buttons
+9966081f8482 SystemUI: DynamicIsland: Remove ripple on media popup album art click
+6be0f0bf8c40 SystemUI: DynamicIsland: Add haptic feedback on chip click
+10317e85f5ed SystemUI: DynamicIsland: Make chip artwork rounded
+0a7161d697d6 SystemUI: DynamicIsland: Allow adjust height and width [1/2]
+4e8b5510464b fixup! SystemUI: Add option to disable quicksettings on keyguard
+407a256e5669 SystemUI: DynamicBar: fall back to AOSP call pill when call event is disabled
+60099e287d82 SystemUI: DynamicBar: Re-add notification and call event
+89937ebce864 SystemUI: DynamicIsland: Media popup seekbar follow system seekbar
+208ae64caff5 SystemUI: DynamicIsland: Rework popup animation
+8ac1c37c09cc SystemUI: DynamicIsland: Add squish animation on chip click
+b7283648d7be ActivityThread: Prevent a NPE caused by null configuration
+e761a964afd8 SystemUI: Use material surface color for dynamic island popup bg
+5479851b989e SystemUI: Add Dynamic Island lyrics support
+e63a3bcd3748 SystemUI: Allow to toggle Dynamic Island features [1/2]
+ecf9777ac0d7 SystemUI: Fix notification count not being dismiss
+14d2ea7d4762 SystemUI: Introduce Dynamic Island [1/2]
+75e5c93944e5 SystemUI: Introduce Music ticker [1/3]
+f9936397216b base: Allow hiding statusbar while capturing screenshots [1/2]
+283234818aba SystemUI: Fix doze sensor check for screen-off long press
+b6860adeafd1 SystemUI: Add missing check for lens button in screenshot actions
+3da647364d1d core: Enable smart5g by default
+d68d6b76bf29 SystemUI: Remove broken app icon from statusbar lyric
+058e7a88b4ad SystemUI: Merge md3 animation with animation style [1/2]
+a37cee3d9d3d SytemUI: Add storage save for clipboard only screenshot
+09430c233f84 libs: Adding fallback opt-in for media open gl strategy
+81eff6aee9bc core: Expose supported blur algorithms
+58286a09b065 Smart5gService: Avoid early return with multiple subs
+863372940ba9 Smart5gService: Drop conservative mode
+365761c4c3e6 Smart5GService: Disable 5G when battery is low
+c3f5999f6c6b Smart5gService: Add more functionalities
+a78de41f13f1 Smart5gService: guard it with overlay
+7a5c0bc6fdf8 base: Introduce Smart 5G service [1/2]
+ae0084cc8a4c AnimationUtils: Introduce slide transition
+1a09381196cd Introduce system animation styles
+6d4454a1c261 base: Android P system animation (1/2)
+9dd218a0bfdf wm: Preserve locked rotation during screen state changes
+af637ec8d7d7 SystemUI: Sync depth wallpaper hide/show with keyguard unlock animation
+4dc26dc3ea08 SystemUI: Fix wallet tile regression during qs expansion
+4c62b6ecac7c SystemUI: DynamicBar: Fix circle style vertical position
+1d98bb9eba07 SystemUI: DynamicBar: Improve keyguard chip layout
+fa8878a1b1c8 SystemUI: Add retry mechanism in lyric fetcher
+ba6324cf7ca1 SystemUI: Use md3 font for starusbar lyric
+7119aaf8880b SystemUI: DynamicBar: Hide nowplaying when keyguard panel visible
+7b2499004e19 SystemUI: NowPlaying: Add music lyrics mode [1/2]
+52118d6b7157 SystemUI: NowPlaying: Honor tap-to-expand setting for expanded overlay
+69b6f7773164 SystemUI: add LyricsFetcher for LRCLIB synced/plain lyrics
+1c890f70c6c7 SystemUI: Adapt status bar lyric to modern pipeline
+a124d76beedc Status bar lyrics: Fix bug where some lyric would be wrongly ignored
+bf78d286d504 statusbar: BP1A fixup for status bar lyric
+811b19c76263 Adapt statusbar lyric for Android V
+d047b6d41010 SystemUI: Fix status bar lyric overlapping with the center clock
+050d241145e4 fixup! [SQUASHED] base: Add status bar lyric for Android 14
+a6aa3459ed3d [SQUASHED] base: Add status bar lyric for Android 14
+b16b2db0cc69 fwb: Turn off some debugging we don't need
+03f8c8315ad7 AlarmManagerService: Reduce log level wtf -> w
+9e37c9af299e BluetoothUtils: Disable useless logspam
+fdbcc8ebc188 base: Turn off some debugs
+8bdf78c77435 SystemUI: Use light theme for music chip and affordance buttom
+ff3651310e00 SystemUI: Add configurable icon size and row spacing for classic QS tiles [1/2]
+c2c7817f7825 SystemUI: DynamicBar: Exclude timer, stopwatch and recording from circle style
+18acf3d07ed4 services: Add missing ANON profile tracking
+74c2ffe488c8 SystemUI: DynamicBar: Add compact circle style [1/2]
+9870a201ac83 SystemUI: DynamicBar: Use accent color for keyguard chip action button bg
+6c42bc261203 SystemUI: DynamicBar: Reduce statusbar media expanded bitmap size
+4a19b1789f41 core: Improve activity animation
+a24897850bc5 services: Enabling app image startup cache
+44c1dba3c0d0 services: Fixing window exit animation concurrency bug
+4be31d8fd904 core: Fixing AnimatorSet concurrency issue
+12b3abfe05d4 SystemUI: Fixing power menu dialog stack issue
+90899e5bf368 SystemUI: Optimizing shade blur render
+5b49f6227eef core: Fixing blur regions null crash
+ddef1c1aaf9a SystemUI: Show footer for essential notifications
+b2d7c06fe74a SystemUI: Improving fps options
+04cd88b6c362 SystemUI: SystemIconsPopup: Replace location with torch tile
+d69dca3f15f0 SystemUI: SystemIconsPopup: Add `RECEIVER_NOT_EXPORTED` to all context-registered receivers
+7704584a5ef7 SystemUI: SystemIconsPopup: Persist toggle states across popup without re-querying
+5ce81dbcaf69 SystemUI: SystemIconsPopup: Open media app on album art tap
+03718ee2816b SystemUI: Allow to copy screenshots to clipboard instead of saving in storage [1/3]
+5d943afd095d SystemUI: Clock style custom gradient color support [1/2]
+7776137945d6 SystemUI: SystemIconsPopup: Add haptic feedback on quick toggle tap
+d7464710080a SystemUI: SystemIconsPopup: Add bouncy popup effect
+aec960101c8c SystemUI: SystemIconsPopup: Add media panel to quick popup
+eaebdf44ba59 SystemUI: Allow disable split landscape notification [1/2]
+b0a623d56d2e Fix crash with media carousel pager update
+ea92b7e112b0 increase flashlight dialog separator contrast
+3b4410a87d85 SystemUI: Fix stale longClickable of system popup breaking QS swipe
+68e7942b50a4 SystemUI: Gate notification blur with transparency settings
+53ca4cb7f43d SystemUI: Implement realtime blur for heads up notifications
+865da5226cbb SystemUI: Add system icon popup in gesture action [1/3]
+9ce011853c4d SystemUI: SystemIconsPopup: Match battery card background to other inactive tiles
+fe3ee160c62a SystemUI: SystemIconsPopup: Clip ripple to card shape for battery/data cards
+59e0100f6d16 SystemUI: SystemIconsPopup: Adapt icon tint on ui theme change
+407e1408097f SystemUI: SystemIconsPopup: Add data switch support in cards
+5468ef343e7b SystemUI: SystemIconsPopup: Opens the system Battery on battery card click
+13ddec9f16ba SystemUI: SystemIconsPopup: Battery ring pulse near critical/full
+349f9db14613 SystemUI: SystemIconsPopup: Speed up the wave when charging
+5fc660cd4aa6 SystemUI: SystemIconsPopup: Add more tiles
+44f665f63c42 SystemUI: SystemIconsPopup: Improve charging stauts
+9ebcaea7024b SystemUI: Make StatusBar icon popup configurable [1/2]
+f2db56d945f7 SystemUI: Add squish animation in StatusBar icon popup
+2b73ec5e0b30 SettingsLib: Fix UsageProgressBarPreference progress animation
+de649641482f [SystemUI] SystemIconsPopup: Drop redundant popup state tracking
+ed33999f4f1f [SystemUI] SystemIconsPopup: Prevent dismiss animation restarts
+7b963436fee3 [SystemUI] SystemIconsPopup: Deduplicate popup theme setup
+950570df2aeb [SystemUI] SystemIconsPopup: Cut battery wave draw allocations
+55e33a489399 [SystemUI] SystemIconsPopup: Defer animated value reads to draw phase
+f85fa07f482a [SystemUI] SystemIconsPopup: Make connection status event-driven
+3990c7e37790 [SystemUI] SystemIconsPopup: Replace telephony polling with callbacks
+f5bf839e0bdf [SystemUI] SystemIconsPopup: Update battery card from battery broadcasts
+762a3dec6895 [SystemUI] SystemIconsPopup: Use display-aware WindowManager
+cae21af95e22 [SystemUI] SystemIconsPopup: Show power menu via GlobalActionsComponent
+9a8acccf2b34 [SystemUI] Implement StatusBar icon popup view
+4e1bfe829c8c SystemUI: Add colorOS big clock style [1/2]
 
 ========================================
- PROJECT: frameworks/libs/systemui
+ PROJECT: hardware/interfaces
 ========================================
-85e49ac weathereffects: Fixing snow effect not working on some devices
+673e7a843d audio: aidl: Load Dolby DAP in loadHardcodedEffects()
+f3fe8d85b3 [ax_fx] integrating axfx and into audio aidl
 
 ========================================
- PROJECT: frameworks/native
+ PROJECT: hardware/qcom-caf/wlan
 ========================================
-970f71c93e libs: Cache renderengine textures
+80f4e56 Merge tag 'WLAN.LA.1.0.r1-09600-pakala.0' into staging/lineage-23.2_merge-WLAN.LA.1.0.r1-09600-pakala.0
+0973b6a Revert "wifi-hal: Only try LOWI once"
 
 ========================================
  PROJECT: lineage/hudson
 ========================================
-8df95c8 husdon: Add mars to build targets
-b3296a7 hudson: add h873
-969b826 Regenerate device dependency mappings
-e2e0ea8 updater: Mention SHIFTphone 8.1
-c9c7622 How powerfull is Odin??
+3ccf41f Regenerate device dependency mappings
+c38ded0 Regenerate device dependency mappings
+41ac9a0 Regenerate device dependency mappings
 
 ========================================
  PROJECT: lineage/mirror
 ========================================
-53438e3 Updated aosp-minimal to 21-Jul-2026 18:02 UTC
-e76eaa4 Updated to 19-Jul-2026 18:01 UTC
+8e2bd43 Updated to 05-Aug-2026 06:01 UTC
+0b35e92 Updated to 03-Aug-2026 06:01 UTC
+
+========================================
+ PROJECT: lineage/scripts
+========================================
+f93bac0 motorola: Update info script to work with OTA zips
 
 ========================================
  PROJECT: lineage/wiki
 ========================================
-12c0c942 wiki: "GB GB" -> " GB"
-4678ea12 devices: lemonades: Correct the firmware requirements
-a7fda2dc wiki: devices: Promote mars to 23.2
-1832e52b devices: Add H873 LG G6 variant
-994bcab5 wiki: Improve web flash tool info
-66c43968 wiki: Fix broken link in glossary
-e391594c wiki: Split otter into 8.0/8.1 variants
-aa536e17 devices: NB1: Use fastboot_misc recovery reboot method
-c04f3b7f wiki: Add fastboot_misc recovery reboot method
-0a8f7012 wiki: Add AYN Odin (M0/M2)
+1a9d181f wiki: rtwo: Update Moto X40 variant to A15 firmware
+79580f63 wiki: peridot: Remove eSIM from peripherals
+2c624d2a wiki: Snapdragon -> Qualcomm
+92668719 wiki: peridot: Require 15 or 16 firmware
+23a2d4a4 wiki: signing_builds: Symlink testkey to releasekey
 
 ========================================
  PROJECT: packages/apps/Launcher3
 ========================================
-b18aafa452 Launcher3: Do not show app info for folder
-cfcbca13a0 Launcher3: Update NOSAtmosphereEffect package name [1/2]
-8ee102c7b3 Launcher3: Implement Enlarge folders and Folder customisations
+bd88b02f1f fixup! Launcher3: App launch animation with blur and pushback
+0bdcd5c926 Revert "Launcher3: switch to MIRROR blur"
+ba0eb5025e fixup! Launcher3: Add sandbox hooks
+3cb87b38ac Launcher3: Do not show app info for folder
+d8606076eb Launcher3: Update NOSAtmosphereEffect package name [1/2]
+2a5f0cca95 Launcher3: Implement Enlarge folders and Folder customisations
+
+========================================
+ PROJECT: packages/apps/Settings
+========================================
+816149c2345 Settings: Add one-time hotspot data limit (2/2)
 
 ========================================
  PROJECT: packages/apps/Singularity
 ========================================
-124cad9 Add music lyrics mode [2/2]
-f3e5d6a Add status bar lyric [2/2]
-72f0849 Update NOSAtmosphereEffect package name [2/2]
-314dd3c add configurable icon size and row spacing for classic QS tiles [2/2]
+19f24ab Add QS header clock style
+9f1104f Make min/max fling velocity user-configurable [2/2]
+
+========================================
+ PROJECT: packages/apps/TvSettings
+========================================
+0e62bf2a4 TvSettings: Also show our About info on GTV
+
+========================================
+ PROJECT: system/media
+========================================
+8187dbda audio: Register Dolby DAP effect UUIDs
+cf21e296 [viperfx_aidl] viperfx aidl integrate
 
 ========================================
  PROJECT: vendor/apn
 ========================================
-3169b43 apns: Update Philippines APNs
-
-========================================
- PROJECT: vendor/bcr
-========================================
-c7c22f9 BCR: Auto-update to version 3.5
+8322c36 APN: Declare type for T-Mobile Project Fi
+35a216e apn: RU: Update T-Mobile APN
+fb4e2d8 apn: Make "type" required
+8e71eb2 apn: Remove ATT Activation
 
 ========================================
  PROJECT: vendor/extras
 ========================================
-c8bdfc4c extras: Build NOSAtmosphereEffect
+3415f171 extras: Build NOSAtmosphereEffect
 
 ========================================
  PROJECT: vendor/lineage
 ========================================
-06959855 overlay: Increase maximum wallpaper scale
-f8bbe9c6 lineage: Introduce a simple program for disabling adb remount overlays
+5eaeec28 config: Add sdk level and patch level in OTA json
+e4b8f306 Revert "overlay: reducing touch slop for responsiveness"
+f10a7f77 Revert "overlay: Increase max fling velocity"
+02086ce8 release: Bump Security String to 2026-08-01
 
